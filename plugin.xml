@@ -4,11 +4,11 @@
     id="cordova-plugin-IAPCocoon"
     version="1.0.83">
 	
-    <name>Cordova Samsung Permissions</name>
-    <description>Allow Used to include in-app purchases, billing keys permission for cocoon </description>
+    <name>IAPCocoon</name>
+    <description>Used to include in-app purchases, billing keys permission for cocoon </description>
     <author>Sahel A.</author>	
     <license>MIT</license>
-    <keywords>cordova,plugin,samsung</keywords>
+    <keywords>cordova,plugin</keywords>
     <repo>https://github.com/sasoftwarerl/IAPCocoon</repo>
     <issue>https://github.com/sasoftwarerl/IAPCocoon/issues</issue>	
 	<engines>
