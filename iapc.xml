@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-sss"
+    version="1.0.83">
+	
+    <name>Cordova Samsung Permissions</name>
+    <description>Allow Samsung Store Permissions</description>
+    <author>Sahel A.</author>	
+    <license>MIT</license>
+    <keywords>cordova,plugin,samsung</keywords>
+    <repo>https://github.com/sasoftwarerl/sss</repo>
+    <issue>https://github.com/sasoftwarerl/sss/issues</issue>	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+ 
+    
+    <!-- android -->	
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="samsungStorePlugin" >
+                <param name="android-package" value="com.lans.cordova.plugin.sss"/>
+            </feature>
+        </config-file>
+        
+		
+       <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="com.android.vending.BILLING" />
+        </config-file>
+  
+    </platform>
+
+</plugin>
